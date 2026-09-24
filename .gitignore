@@ -1,0 +1,21 @@
+# Frontend dependencies and generated files
+node_modules/
+.next/
+out/
+coverage/
+playwright-report/
+test-results/
+*.tsbuildinfo
+next-env.d.ts
+
+# Python dependencies and generated files
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+
+# Local settings
+.env*
+!.env.example
+.DS_Store

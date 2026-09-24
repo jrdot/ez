@@ -1,0 +1,96 @@
+.
+|-- AGENTS.md
+|-- CLAUDE.md
+|-- README.md
+|-- backend
+|   |-- README.md
+|   |-- __pycache__
+|   |-- alembic.ini
+|   |-- main.py
+|   |-- migrations
+|   |-- pyproject.toml
+|   |-- src
+|   |-- tests
+|   `-- uv.lock
+|-- docs
+|   |-- README.md
+|   |-- core
+|   |   |-- DESIGN_SPEC.md
+|   |   `-- USER_REQUIREMENTS_SPEC.md
+|   `-- workflow
+|       |-- backend
+|       |   |-- 01-DATABASE.md
+|       |   `-- common.md
+|       |-- common.md
+|       `-- frontend
+|           |-- 01-FOUNDATION-HANDOFF.md
+|           |-- 01-FOUNDATION.md
+|           |-- 02-WORKSPACE-HANDOFF.md
+|           |-- 02-WORKSPACE.md
+|           |-- 03-OBJECTS-IMAGES-HANDOFF.md
+|           |-- 03-OBJECTS-IMAGES.md
+|           |-- 04-WIRING.md
+|           |-- 05-INTEGRATIONS.md
+|           |-- 06-VALIDATION.md
+|           |-- 07-TRACEABILITY.md
+|           `-- common.md
+|-- e2e
+|-- eslint.config.mjs
+|-- list.txt
+|-- next-env.d.ts
+|-- next.config.ts
+|-- node_modules
+|-- package-lock.json
+|-- package.json
+|-- playwright.config.ts
+|-- postcss.config.mjs
+|-- public
+|-- src
+|   |-- adapters
+|   |   |-- image.test.ts
+|   |   |-- image.ts
+|   |   `-- library.ts
+|   |-- app
+|   |   |-- globals.css
+|   |   |-- layout.tsx
+|   |   `-- page.tsx
+|   |-- components
+|   |   `-- icons.tsx
+|   |-- domain
+|   |   |-- coordinates.test.ts
+|   |   |-- coordinates.ts
+|   |   |-- editor.test.ts
+|   |   |-- editor.ts
+|   |   |-- id.test.ts
+|   |   |-- id.ts
+|   |   |-- image-edit.ts
+|   |   |-- objects.test.ts
+|   |   |-- objects.ts
+|   |   |-- project-file.ts
+|   |   |-- project.test.ts
+|   |   |-- project.ts
+|   |   |-- snap.ts
+|   |   |-- validation.test.ts
+|   |   |-- validation.ts
+|   |   `-- workspace.test.ts
+|   `-- features
+|       |-- editor
+|       |   |-- editor-canvas.tsx
+|       |   |-- editor-shell.tsx
+|       |   |-- entity-properties.tsx
+|       |   |-- image-editor.tsx
+|       |   |-- object-shape.tsx
+|       |   |-- part-editor.tsx
+|       |   `-- workspace-input.ts
+|       `-- project
+|           `-- project-launcher.tsx
+|-- test-results
+|   |-- fe03-image-editor.png
+|   |-- fe03-objects.png
+|   |-- workspace-1024-wire.png
+|   |-- workspace-collapsed.png
+|   `-- workspace-expanded.png
+|-- tsconfig.json
+|-- tsconfig.tsbuildinfo
+`-- vitest.config.mts
+

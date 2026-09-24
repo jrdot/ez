@@ -1,0 +1,5 @@
+import { expect, it } from "vitest";
+import { documentToLocal, documentToScreen, localToDocument, paperSize, screenToDocument } from "./coordinates";
+it("uses physical A4/A3 in both orientations",()=>{expect(paperSize("A4-landscape")).toEqual({width:297,height:210});expect(paperSize("A4-portrait")).toEqual({width:210,height:297});expect(paperSize("A3-landscape")).toEqual({width:420,height:297});expect(paperSize("A3-portrait")).toEqual({width:297,height:420});});
+it("round-trips screen offsets, zoom and pan independently of DPI",()=>{const p={x:41.2,y:-6},v={origin:{x:80,y:30},pan:{x:-20,y:44},pixelsPerMm:96/25.4,zoom:1.75}; const q=screenToDocument(documentToScreen(p,v),v);expect(q.x).toBeCloseTo(p.x);expect(q.y).toBeCloseTo(p.y);});
+it("round-trips scaled arbitrary rotation around local origin",()=>{const p={x:23,y:11},t={x:60,y:70,rotation:37,scale:1.8};const q=documentToLocal(localToDocument(p,t),t);expect(q.x).toBeCloseTo(p.x);expect(q.y).toBeCloseTo(p.y);expect(localToDocument({x:2,y:0},{x:10,y:10,rotation:90,scale:2})).toEqual({x:10,y:14});});

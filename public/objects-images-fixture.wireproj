@@ -1,0 +1,312 @@
+{
+  "format": "ezwire-project",
+  "version": 2,
+  "project": {
+    "id": "sample-project",
+    "revision": 0,
+    "name": "FE-03 배선 개발 fixture",
+    "formatVersion": 2,
+    "canvas": {
+      "paper": "A4-landscape",
+      "width": 297,
+      "height": 210,
+      "background": "#ffffff",
+      "gridSize": 5,
+      "snapMode": "object"
+    },
+    "sheets": [
+      {
+        "id": "sample-sheet-1",
+        "name": "EZ-001",
+        "components": [
+          {
+            "id": "component-0",
+            "partId": "part",
+            "x": 30,
+            "y": 40,
+            "width": 40,
+            "height": 25,
+            "rotation": 0,
+            "scale": 1.0,
+            "label": "샘플 부품",
+            "properties": {},
+            "objects": [
+              {
+                "id": "fixture-image-0",
+                "type": "image",
+                "assetId": "asset",
+                "width": 40,
+                "height": 25,
+                "transform": {
+                  "x": 0,
+                  "y": 0,
+                  "rotation": 0,
+                  "scale": 1
+                }
+              },
+              {
+                "id": "fixture-label-0",
+                "type": "text",
+                "text": "Module",
+                "fontSize": 4,
+                "transform": {
+                  "x": 4,
+                  "y": 8,
+                  "rotation": 0,
+                  "scale": 1
+                }
+              }
+            ],
+            "terminals": [
+              {
+                "id": "terminal-0",
+                "type": "point",
+                "role": "terminal",
+                "x": 40,
+                "y": 12,
+                "name": "OUT",
+                "visible": true,
+                "connectable": true
+              },
+              {
+                "id": "fixture-disabled-0",
+                "type": "point",
+                "role": "terminal",
+                "name": "NC",
+                "x": 10,
+                "y": 0,
+                "visible": true,
+                "connectable": false
+              },
+              {
+                "id": "fixture-hidden-0",
+                "type": "point",
+                "role": "terminal",
+                "name": "Hidden",
+                "x": 15,
+                "y": 0,
+                "visible": false,
+                "connectable": true
+              }
+            ]
+          },
+          {
+            "id": "component-1",
+            "partId": "part",
+            "x": 120,
+            "y": 40,
+            "width": 40,
+            "height": 25,
+            "rotation": 37,
+            "scale": 1.25,
+            "label": "샘플 부품",
+            "properties": {},
+            "objects": [
+              {
+                "id": "fixture-image-1",
+                "type": "image",
+                "assetId": "asset",
+                "width": 40,
+                "height": 25,
+                "transform": {
+                  "x": 0,
+                  "y": 0,
+                  "rotation": 0,
+                  "scale": 1
+                }
+              },
+              {
+                "id": "fixture-label-1",
+                "type": "text",
+                "text": "Module",
+                "fontSize": 4,
+                "transform": {
+                  "x": 4,
+                  "y": 8,
+                  "rotation": 0,
+                  "scale": 1
+                }
+              }
+            ],
+            "terminals": [
+              {
+                "id": "terminal-1",
+                "type": "point",
+                "role": "terminal",
+                "x": 40,
+                "y": 12,
+                "name": "OUT",
+                "visible": true,
+                "connectable": true
+              },
+              {
+                "id": "fixture-disabled-1",
+                "type": "point",
+                "role": "terminal",
+                "name": "NC",
+                "x": 10,
+                "y": 0,
+                "visible": true,
+                "connectable": false
+              },
+              {
+                "id": "fixture-hidden-1",
+                "type": "point",
+                "role": "terminal",
+                "name": "Hidden",
+                "x": 15,
+                "y": 0,
+                "visible": false,
+                "connectable": true
+              }
+            ]
+          }
+        ],
+        "wires": [
+          {
+            "id": "wire-0",
+            "type": "free",
+            "from": {
+              "kind": "terminal",
+              "componentId": "component-0",
+              "terminalId": "terminal-0"
+            },
+            "to": {
+              "kind": "junction",
+              "junctionId": "junction"
+            },
+            "bends": [],
+            "color": "#2563eb",
+            "width": 0.5
+          },
+          {
+            "id": "wire-1",
+            "type": "free",
+            "from": {
+              "kind": "terminal",
+              "componentId": "component-1",
+              "terminalId": "terminal-1"
+            },
+            "to": {
+              "kind": "junction",
+              "junctionId": "junction"
+            },
+            "bends": [],
+            "color": "#2563eb",
+            "width": 0.5
+          }
+        ],
+        "objects": [
+          {
+            "id": "image",
+            "type": "image",
+            "assetId": "asset",
+            "width": 20,
+            "height": 20,
+            "transform": {
+              "x": 10,
+              "y": 100,
+              "rotation": 0,
+              "scale": 1
+            }
+          },
+          {
+            "id": "text",
+            "type": "text",
+            "text": "FE-02",
+            "fontSize": 4,
+            "transform": {
+              "x": 40,
+              "y": 100,
+              "rotation": 0,
+              "scale": 1
+            }
+          },
+          {
+            "id": "point",
+            "type": "point",
+            "transform": {
+              "x": 10,
+              "y": 130,
+              "rotation": 0,
+              "scale": 1
+            }
+          },
+          {
+            "id": "line",
+            "type": "line",
+            "end": {
+              "x": 20,
+              "y": 0
+            },
+            "color": "black",
+            "width": 0.5,
+            "transform": {
+              "x": 20,
+              "y": 130,
+              "rotation": 0,
+              "scale": 1
+            }
+          }
+        ],
+        "groups": [
+          {
+            "id": "group",
+            "childIds": [
+              "image",
+              "text"
+            ]
+          }
+        ],
+        "junctions": [
+          {
+            "id": "junction",
+            "x": 95,
+            "y": 52
+          }
+        ]
+      }
+    ],
+    "palette": [
+      {
+        "id": "black",
+        "name": "검정",
+        "color": "#1f2937"
+      },
+      {
+        "id": "red",
+        "name": "빨강",
+        "color": "#dc2626"
+      },
+      {
+        "id": "blue",
+        "name": "파랑",
+        "color": "#2563eb"
+      }
+    ],
+    "bom": {
+      "manualItems": []
+    },
+    "createdAt": "2026-09-22T00:00:00.000Z",
+    "updatedAt": "2026-09-22T00:00:00.000Z",
+    "nextSheetNumber": 2,
+    "parts": [
+      {
+        "id": "part",
+        "name": "샘플 부품",
+        "width": 40,
+        "height": 25,
+        "objects": [],
+        "terminals": []
+      }
+    ],
+    "assets": [
+      {
+        "id": "asset",
+        "name": "sample.svg",
+        "mimeType": "image/png",
+        "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAAyCAYAAADLLVz8AAAAfUlEQVR4nO3QsQnAMBAEQVXi1tyLG7cbUCD4wCzMwebHrNdGW38fqA/gcACHAzjcFvB6bm0CCBBgOoAAAaYDCBBgOoAAAaYDCBBgOoAAAaYDCBBgOoAAAaYDCBBgOoAAAaYDCBBgOoAAAaYDCBBgumNAOx/A4QAOB3A4gMN9Cn95uY4kUD0AAAAASUVORK5CYII="
+      }
+    ]
+  }
+}

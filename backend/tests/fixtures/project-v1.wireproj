@@ -1,0 +1,36 @@
+{
+  "format": "ezwire-project",
+  "version": 1,
+  "project": {
+    "id": "sample-project",
+    "revision": 0,
+    "name": "샘플 빈 프로젝트",
+    "formatVersion": 1,
+    "canvas": {
+      "width": 1600,
+      "height": 900,
+      "gridSize": 20,
+      "snapToGrid": true
+    },
+    "sheets": [
+      {
+        "id": "sample-sheet-1",
+        "name": "시트 1",
+        "components": [],
+        "wires": [],
+        "annotations": []
+      }
+    ],
+    "palette": [
+      { "id": "black", "name": "검정", "color": "#1f2937" },
+      { "id": "red", "name": "빨강", "color": "#dc2626" },
+      { "id": "blue", "name": "파랑", "color": "#2563eb" }
+    ],
+    "bom": { "manualItems": [] },
+    "createdAt": "2026-09-22T00:00:00.000Z",
+    "updatedAt": "2026-09-22T00:00:00.000Z"
+  },
+  "parts": [],
+  "assets": []
+}
+

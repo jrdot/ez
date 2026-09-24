@@ -1,0 +1,4 @@
+interface:
+  display_name: "Work Validation"
+  short_description: "워크플로우의 요구사항, 구현, 기능를 근거로 검증합니다"
+  default_prompt: "현재 개발 워크플로우의 가이드, HANDOFF, 구현과 테스트를 대조해 검증 보고서를 작성해 주세요."
