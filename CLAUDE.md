@@ -1,20 +1,20 @@
 # CLAUDE.md
 
-부품 배치·배선 웹앱. 작업 전에 `00-brief/PROJECT_DEFINITION.md`를 먼저 읽는다.
+부품 배치·배선 웹앱. 작업 전에 `docs/00-brief/PROJECT_DEFINITION.md`를 먼저 읽는다.
 
 ## 폴더
 
 ```
-00-brief/     프로젝트 정의서
-01-spec/      URS.md, FDS.md, 용어집, 시나리오
-02-plan/      work.yaml — 업무 목록
-03-design/    업무별 설계 문서
-  frontend/   F01-<slug>.md …
-  backend/    B01-<slug>.md …
-  database/   D01-<slug>.md …
-adr/          ADR-001-<slug>.md …
-guide/        공통 개발 가이드(스택 확정 후)
-interviews/   draft-<YYYYMMDD>-<주제>.md — 인터뷰 종료 후 draft- 제거
+docs/00-brief/     프로젝트 정의서
+docs/01-spec/      URS.md, FDS.md, 용어집, 시나리오
+docs/02-plan/      work.yaml — 업무 목록
+docs/03-design/    업무별 설계 문서
+       frontend/   F01-<slug>.md …
+       backend/    B01-<slug>.md …
+       database/   D01-<slug>.md …
+docs/adr/          ADR-001-<slug>.md …
+docs/guide/        공통 개발 가이드(스택 확정 후)
+docs/interviews/   draft-<YYYYMMDD>-<주제>.md — 인터뷰 종료 후 draft- 제거
 ```
 
 코드 폴더 구조는 기술 스택 ADR 확정 후 정한다.
@@ -30,7 +30,7 @@ interviews/   draft-<YYYYMMDD>-<주제>.md — 인터뷰 종료 후 draft- 제�
 | ADR-001 … | 기술 결정 | adr/ |
 | M1, M2a … | 마일스톤 | 정의서 8절 |
 
-- 업무 ID 하나에 설계 문서 하나: `03-design/<영역>/<ID>-<slug>.md`
+- 업무 ID 하나에 설계 문서 하나: `docs/03-design/<영역>/<ID>-<slug>.md`
 - ID는 바꾸거나 재사용하지 않는다.
 - 커밋 메시지는 업무 ID로 시작한다. 예: `F05: 90° 배선 경로 생성`
 
