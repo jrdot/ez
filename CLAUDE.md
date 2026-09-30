@@ -42,10 +42,13 @@ docs/interviews/   draft-<YYYYMMDD>-<주제>.md — 인터뷰 종료 후 draft- 
 
 ## 참고 소스
 
-easycable 백업 소스는 구조와 동작만 참고한다. 코드와 이미지는 복사하지 않는다.
+`reference/easycable/`은 참고 서비스의 사이트 카피다(git 제외).
+- 구조와 동작만 참고한다. 코드·이미지·문구를 복사하지 않는다.
+- 이 폴더의 파일은 수정하지 않는다.
+- 참고한 내용은 해당 설계 문서에 "참고: reference/easycable/<경로>"로 적는다.
 
 ## 진행 상태
 
 - 단계나 마일스톤을 시작하거나 마치면 [README.md](http://README.md) "진행 상태" 표의 해당 행을 갱신한다(⬜ → 🔄 → ✅, 완료일 기록). "다음 작업" 줄과 기준일도 함께 고친다.
-
 - 업무(F·B·D) 단위 상태는 docs/02-plan/work.yaml의 status로만 관리하고 README에는 적지 않는다.
+
